@@ -132,9 +132,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\ecommerce\resources\sass\materialize-css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\ecommerce\resources\lang" />
+      <recent name="D:\wamp64\www\ecommerce\resources\js" />
+      <recent name="D:\wamp64\www\ecommerce\resources\sass" />
+      <recent name="D:\wamp64\www\ecommerce\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -150,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601553122668</updated>
-      <workItem from="1601553123801" duration="9049000" />
+      <workItem from="1601553123801" duration="15204000" />
     </task>
     <servers />
   </component>
@@ -158,6 +169,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601632506116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601632506116" />
     <state x="752" y="227" key="NewPhpClassDialog" timestamp="1601561646529">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
