@@ -122,6 +122,7 @@
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/darryldecode/cart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iH8OHl5DfKvl7PicPBR8TbWc3X" />
@@ -161,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601553122668</updated>
-      <workItem from="1601553123801" duration="15204000" />
+      <workItem from="1601553123801" duration="20274000" />
     </task>
     <servers />
   </component>
