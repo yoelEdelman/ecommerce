@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function () {
     // Commandes
     Route::prefix('commandes')->group(function () {
         Route::name('commandes.details')->post('details', \App\Http\Controllers\DetailsController::class);
+        Route::name('commandes.confirmation')->get('confirmation/{order}', [\App\Http\Controllers\OrdersController::class, 'confirmation']);
 
         Route::resource('/', \App\Http\Controllers\OrderController::class)->names([
             'create' => 'commandes.create',

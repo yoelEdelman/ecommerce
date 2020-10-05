@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Order;
 use App\Models\Shop;
+use App\Policies\OrderPolicy;
 use Darryldecode\Cart\Cart;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
@@ -46,4 +48,8 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('shop', Shop::firstOrFail());
     }
+
+    protected $policies = [
+        Order::class => OrderPolicy::class,
+    ];
 }

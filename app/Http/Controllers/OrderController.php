@@ -119,7 +119,7 @@ class OrderController extends Controller
         \Cart::clear();
         \Cart::session($request->user())->clear();
         // Notifications à prévoir pour les administrateurs et l'utilisateur
-        //return redirect(route('commandes.confirmation', $order->id));
+        return redirect(route('commandes.confirmation', $order->id));
     }
 
     /**
