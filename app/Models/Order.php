@@ -9,6 +9,22 @@ class Order extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'shipping',
+        'tax',
+        'user_id',
+        'state_id',
+        'payment',
+        'reference',
+        'pick',
+        'total',
+    ];
+
     public function adresses()
     {
         return $this->hasMany(OrderAddress::class);

@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Shop;
 use Darryldecode\Cart\Cart;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -36,5 +38,12 @@ class AppServiceProvider extends ServiceProvider
                 'cartTotal' => \Cart::getTotal(),
             ]);
         });
+
+        Route::resourceVerbs([
+            'edit' => 'modification',
+            'create' => 'creation',
+        ]);
+
+        View::share('shop', Shop::firstOrFail());
     }
 }

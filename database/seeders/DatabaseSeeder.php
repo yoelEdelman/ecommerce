@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Address;
 use App\Models\Colissimo;
-use App\Models\Counrty;
+use App\Models\Country;
 use App\Models\Order;
 use App\Models\Page;
 use App\Models\Product;
@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        Counrty::insert([
+        Country::insert([
             ['name' => 'France', 'tax' => 0.2],
             ['name' => 'Belgique', 'tax' => 0.2],
             ['name' => 'Suisse', 'tax' => 0],

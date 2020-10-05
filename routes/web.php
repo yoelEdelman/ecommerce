@@ -20,3 +20,16 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('produits/{produit}', \App\Http\Controllers\ProductController::class)->name('produits.show');
 Route::resource('panier', \App\Http\Controllers\CartController::class)->only(['index', 'store', 'update', 'destroy']);
+
+// Utilisateur authentifié
+Route::middleware('auth')->group(function () {
+    // Commandes
+    Route::prefix('commandes')->group(function () {
+        Route::name('commandes.details')->post('details', \App\Http\Controllers\DetailsController::class);
+
+        Route::resource('/', \App\Http\Controllers\OrderController::class)->names([
+            'create' => 'commandes.create',
+            'store' => 'commandes.store',
+        ])->only(['create', 'store']);
+    });
+});
